@@ -27,5 +27,6 @@ public class GameModifyForFun
     	public static RegistryObject<Block> gmffBlock = myBlocks.register("all_ore", () -> new Block(Block.Properties.of(Material.STONE)));
     	public static RegistryObject<Item> gmffItem = myItems.register("all_ore", () -> new BlockItem(gmffBlock.get(), new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS)));
     	public static RegistryObject<Item> multiOre = myItems.register("multi_ore", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+        public static RegistryObject<Item> multiSword = myItems.register("multi_sword", () -> new MultiSword(new Item.Properties().tab(ItemGroup.TAB_COMBAT)));
     }
 }
